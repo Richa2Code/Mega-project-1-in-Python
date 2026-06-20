@@ -1,3 +1,9 @@
+from speech import take_command
 from speak import speak
 
-speak("Hello Richa, I am jarvis")
+while True:
+
+    text = take_command()
+
+    if "jarvis" in text:
+        speak("Yes, how may I help you, today?")
