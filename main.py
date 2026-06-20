@@ -1,6 +1,3 @@
-import speech_recognition as sr
-import webbrowser
-import pyttsx3
+from speak import speak
 
-if __name__ == "__main__":
-  pass
+speak("Hello Richa, Ia m jarvis")
