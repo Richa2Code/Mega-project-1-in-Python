@@ -8,4 +8,5 @@ while True:
 
     if "jarvis" in text:
         speak("Yes, how may I help you, today?")
-    process_command(text)
+        command = take_command()
+        process_command(command)
