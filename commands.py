@@ -2,6 +2,12 @@ import webbrowser
 from speak import speak 
 def process_command(command):
     if "youtube" in command:
-        engine.say("Opening the youtube")
-        engine.runandwait()
-        webbrowser.open("https://youtube.com")
+      speak("opening the youtube !")
+      webbrowser.open("https://youtube.com")
+    elif "google" in command:
+      speak("opening the Google !")
+      webbrowser.open("https://google.com")
+    elif "linkedin" in command:
+       speak("Opening the linkdin !")
+       webbrowser.open("https://www.linkedin.com/in/richabenmakwana/")
+        
