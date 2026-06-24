@@ -22,3 +22,5 @@ def process_command(command):
     elif "github" in command:
        speak("Opening the GitHub.")
        webbrowser.open("https://github.com/")
+    else:
+       speak("Sorry, I don't know that command yet.")
