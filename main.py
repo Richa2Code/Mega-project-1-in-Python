@@ -7,6 +7,6 @@ while True:
     text = take_command()
 
     if "jarvis" in text:
-        speak("Yes, how may I help you, today?")
+        speak("Yes, how may I help you today?")
         command = take_command()
         process_command(command)
