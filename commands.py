@@ -17,6 +17,7 @@ def process_command(command):
     if command == "":
         speak("Sorry, I did not catch that.")
         return True
+    
     if command.startswith("play"):
          song = command.replace("play", "", 1).strip()
          if song == "":
