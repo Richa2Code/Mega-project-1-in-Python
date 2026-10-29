@@ -14,7 +14,7 @@ while running:
         # If you said "jarvis open youtube" in one go, use the rest as the command.
         command = text.replace("jarvis", "").strip()
 
-         # If you only said "jarvis", ask and listen again.
+        # If you only said "jarvis", ask and listen again.
         if command == "":
             speak("Yes, how may I help you today?")
             command = take_command()
