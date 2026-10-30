@@ -6,14 +6,15 @@ speak("Jarvis is online. Say Jarvis to wake me up.")
 
 running = True
 
+GREETINGS = ["hello", "hey", "hi", "ok", "okay"]
 while running:
 
     text = take_command()
 
     if "jarvis" in text:
         # If you said "jarvis open youtube" in one go, use the rest as the command.
-        command = text.replace("jarvis", "").strip()
-        speak("Yes how may i help you today darllliiinnngggg!!!")
+        words = text.replace("jarvis", "").split()
+        command = " ".join(w for w in words if w not in GREETINGS)
 
         # If you only said "jarvis", ask and listen again.
         if command == "":
